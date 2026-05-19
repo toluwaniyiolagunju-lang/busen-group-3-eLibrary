@@ -1,12 +1,18 @@
+/* E-Library main stylesheet */
+/* Root color palette and design tokens: adjust these variables to change theme colors globally. */
 :root {
+  /* Background/base colors */
   --bg: #0d1420;
   --surface: #131b2d;
   --surface-strong: #1f2a44;
+  /* Text colors */
   --text: #f8fafc;
   --muted: #9aa5b9;
+  /* Accent and semantic colors */
   --accent: #6cd6ff;
   --accent-soft: #14374d;
   --danger: #f87171;
+  /* Radius used for rounded containers (px) */
   --radius: 20px;
 }
 
@@ -26,6 +32,7 @@ img {
   max-width: 100%;
 }
 
+/* Header layout and sticky navigation */
 .site-header {
   display: flex;
   align-items: center;
@@ -74,6 +81,8 @@ img {
   font-weight: 600;
 }
 
+/* Button sizing: padding is in rem (root-relative). Use `button-primary` for the main CTA. */
+
 .button-primary {
   background: var(--accent);
   color: white;
@@ -95,6 +104,7 @@ img {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: center;
+  /* Layout grid for hero: left copy and right image. `min-height` ensures large visual presence. */
   min-height: calc(100vh - 96px);
   padding: 0 2rem 2rem;
 }
@@ -154,6 +164,8 @@ img {
   pointer-events: none;
   transition: opacity 0.25s ease;
 }
+
+/* Auth modal: hidden by default. Toggled by checking the `#auth-toggle` checkbox in the DOM. */
 
 #auth-toggle:checked ~ .auth-modal {
   opacity: 1;

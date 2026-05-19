@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- E-Library categories page -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,10 +8,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Main site header with brand and navigation -->
   <header class="site-header">
     <div class="brand">
       <span class="site-name">E-Library</span>
     </div>
+    <!-- Navigation links: each <a> uses `href` to navigate between pages -->
     <nav class="site-nav"> 
       <a href="index.html">Home</a>
       <a href="categories.html">Categories</a>
@@ -19,6 +22,7 @@
     <label for="auth-toggle" class="button button-primary">Login / Sign Up</label>
     
   </header>
+  <!-- Hidden auth modal trigger and overlay -->
   <input type="checkbox" id="auth-toggle" hidden>
     <div class="auth-modal">
       <div class="auth-card">
@@ -27,6 +31,7 @@
           <h2>Member Access</h2>
           <p>Login or sign up to save your favorite books.</p>
         </div>
+        <!-- Tabbed panels: hidden radio inputs control which panel is visible via CSS selectors -->
         <div class="auth-tabs">
           <input type="radio" id="tab-login" name="auth-tab" checked hidden>
           <input type="radio" id="tab-signup" name="auth-tab" hidden>
@@ -67,6 +72,7 @@
         </div>
       </div>
     </div>
+  <!-- Category search/filter section follows -->
   <section class="search-section" id="filter">
       <div class="section-heading">
         <div>
@@ -81,6 +87,8 @@
       <p class="search-note">This search field is a design sample. Use the category buttons below to filter books with CSS only.</p>
 
       <div class="filter-area">
+        <!-- Hidden radio inputs paired with labels below implement CSS-only filtering. -->
+        <!-- `id` on inputs matches `for` on labels to toggle filters. -->
         <input type="radio" name="book-filter" id="filter-all" checked hidden>
         <input type="radio" name="book-filter" id="filter-fiction" hidden>
         <input type="radio" name="book-filter" id="filter-science" hidden>
@@ -96,6 +104,7 @@
         </div>
 
         <div class="book-grid">
+          <!-- Book cards: the `category-*` class is used by CSS to show/hide cards for each filter -->
           <article class="book-card category-fiction">
             <h3>The Night Library</h3>
             <p>A short story collection about imagination, journeys, and hidden worlds.</p>
