@@ -406,6 +406,50 @@ flex-direction: row;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
 }
+.book-card img {
+  width: 100%;           /* Makes the image fill the width of the card */
+  height: 250px;         /* Forces a uniform height for all book covers */
+  object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
+  border-radius: 4px;    /* Optional: softens the corners of the image */
+  
+  /* Pushes the image to the bottom, right above the tag */
+  margin-top: auto; 
+  margin-bottom: 15px;
+}
+/* 1. Set the baseline for the card */
+.book-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  
+  /* This is the secret to a smooth animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  
+  /* Keep your layout consistent */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push the category tag to the bottom */
+.book-card p {
+  flex-grow: 1;
+}
+
+/* 2. Create the Hover State */
+.book-card:hover {
+  /* Lifts the card UP by 8 pixels */
+  transform: translateY(-8px); 
+  
+  /* Adds a soft, wide shadow underneath to create depth */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); 
+  
+  /* Optional: Highlight the border slightly */
+  border-color: #cccccc; 
+  
+  /* Changes the cursor to a pointing hand */
+  cursor: pointer; 
+}
 
 .book-card {
   display: none;
