@@ -306,14 +306,6 @@ flex-direction: row;
   
 }
 .book-flex img{
-  width: 100%;           /* Makes the image fill the width of the card */
-  height: 250px;         /* Forces a uniform height for all book covers */
-  object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
-  border-radius: 4px;    /* Optional: softens the corners of the image */
-  
-  /* Pushes the image to the bottom, right above the tag */
-  margin-top: auto; 
-  margin-bottom: 15px;
 }
 .feature-card {
   background: var(--surface-strong);
@@ -321,7 +313,18 @@ flex-direction: row;
   padding: 1.6rem;
   box-shadow: 0 18px 45px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
+  height: 100%;
+  
+}
+.feature-card img {
+  width: 1000px;           /* Makes the image fill the width of the card */
+  height: 600px;         /* Forces a uniform height for all book covers */
+  object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
+  border-radius: 4px;    /* Optional: softens the corners of the image */
+  
+  /* Pushes the image to the bottom, right above the tag */
+  margin-top: auto; 
+  margin-bottom: 15px;
 }
 
 .feature-card:hover{
@@ -335,6 +338,27 @@ flex-direction: row;
   padding: 1.6rem;
   box-shadow: 0 18px 45px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+.feature-card1 img {
+  width: 1000px;           /* Makes the image fill the width of the card */
+  height: 600px;         /* Forces a uniform height for all book covers */
+  object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
+  border-radius: 4px;    /* Optional: softens the corners of the image */
+  
+  /* Pushes the image to the bottom, right above the tag */
+  margin-top: auto; 
+  margin-bottom: 15px;
+}
+.feature-card2 img {
+  width: 1000px;           /* Makes the image fill the width of the card */
+  height: 600px;         /* Forces a uniform height for all book covers */
+  object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
+  border-radius: 4px;    /* Optional: softens the corners of the image */
+  
+  /* Pushes the image to the bottom, right above the tag */
+  margin-top: auto; 
+  margin-bottom: 15px;
 }
 .feature-card1:hover{
   transform: scale(1.05);
@@ -347,6 +371,7 @@ flex-direction: row;
   padding: 1.6rem;
   box-shadow: 0 18px 45px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
 }
 .feature-card2:hover{
   transform: scale(1.05);
@@ -492,8 +517,8 @@ flex-direction: row;
 }
 
 .bookotd-card img {
-  width: 200px;           /* Makes the image fill the width of the card */
-  height: 250px;         /* Forces a uniform height for all book covers */
+  width: 500px;           /* Makes the image fill the width of the card */
+  height: 300px;         /* Forces a uniform height for all book covers */
   object-fit: cover;     /* Crops the image perfectly without stretching or squishing it */
   border-radius: 4px;  
   align-items: center;
