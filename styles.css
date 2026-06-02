@@ -378,9 +378,6 @@ flex-direction: row;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.feature-card h3 {
-  margin: 0 0 0.75rem;
-}
 
 .feature-card p {
   margin: 0;
