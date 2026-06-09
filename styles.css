@@ -108,6 +108,9 @@ img {
   /* Layout grid for hero: left copy and right image. `min-height` ensures large visual presence. */
   min-height: calc(100vh - 96px);
   padding: 0 2rem 2rem;
+  background: linear-gradient(135deg, rgba(13, 20, 32, 0.85) 0%, rgba(31, 42, 68, 0.75) 100%), url('emil-widlund-xrbbXIXAWY0-unsplash.jpg.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  border-radius: 12px;
 }
 
 .hero-copy {
