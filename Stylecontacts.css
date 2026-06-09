@@ -461,6 +461,59 @@ img {
   margin: 0.4rem 0;
 }
 
+/* Contact Info Box Styles */
+.contact-info-box {
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+.info-container {
+  background: var(--surface-strong);
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: 1px solid rgba(108,214,255,0.16);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.18);
+}
+
+.info-container h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item h3 {
+  margin: 0 0 0.75rem;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.info-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.info-item a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+  color: #7fe7ff;
+  text-decoration: underline;
+}
+
 h1 {
   text-align: center;
 }
